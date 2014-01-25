@@ -32,7 +32,7 @@ fi
 
 function start_app {
   echo "start"
-  NODE_ENV=$NODE_ENV nohup "$NODE" "$DIR/server.js" 1>>"/var/log/$NAME.log" 2>&1 &
+  NODE_ENV=$NODE_ENV nohup node "$DIR/server.js" 1>>"/var/log/$NAME.log" 2>&1 &
   echo $! > "/var/run/$NAME.pid"
 }
 
