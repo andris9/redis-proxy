@@ -10,8 +10,6 @@
 ### END INIT INFO
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-NODE_PATH=/usr/local/lib/node_modules
-NODE=/usr/local/bin/node
 NAME=redis-proxy
 
 SOURCE="${BASH_SOURCE[0]}"
@@ -31,8 +29,6 @@ fi
 if [ "$NODE_ENV" == "" ]; then
   NODE_ENV=production
 fi
-
-test -x $NODE || exit 0
 
 function start_app {
   echo "start"
