@@ -1,0 +1,16 @@
+{
+  "name": "redis-proxy",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Simple HTTP proxy with Redis based router",
+  "main": "server.js",
+  "author": "Andris Reinman",
+  "license": "MIT",
+  "dependencies": {
+    "http-proxy": "~1.0.1",
+    "redis": "~0.10.0"
+  },
+  "optionalDependencies": {
+    "hiredis": "~0.1.16"
+  }
+}
